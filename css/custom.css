@@ -1,15 +1,15 @@
 /* Project Slideshow */
-
 .primary-image img {
     border: 1px solid lightgray;
     position: relative;
     width: 100%;
 }
 
-/* .carousel-control-prev,
-.carousel-control-next {
-    filter: invert(80%);
-} */
+.carousel-indicators {
+    justify-content: left;
+    position: relative;
+    margin: 0 0 30px 5px;
+}
 
 .carousel-indicators li {
     background-color: #3B478B;
@@ -21,16 +21,31 @@
     height: 15px;
 }
 
-.carousel-indicators {
-    justify-content: left;
-    position: relative;
-    margin: 0 0 30px 5px;
+/* .carousel-control-prev,
+.carousel-control-next {
+    filter: invert(80%);
+} */
+
+@media (min-width:992px) and (max-width:1115px) {
+    .primary-image img {
+        margin-top: 24px;
+    }
 }
 
 /* col-lg */
 @media (min-width: 992px) {
     .carousel-inner {
-        max-height: 430px;
+        max-height: 480px;
+    }
+
+    .slide-text-wrap {
+        /* padding: 20px 0; */
+    }
+}
+
+@media (min-width:768px) and (max-width:840px) {
+    .primary-image img {
+        margin-top: 22px;
     }
 }
 
@@ -41,12 +56,25 @@
     }
 }
 
+@media (min-width:602px) and (max-width:768px) {
+    .primary-image img {
+        max-width: 540px;
+    }
+}
+
 /* col-sm */
 @media (min-width:576px) {
     .carousel-inner {
         margin: 18px;
     }
 
+    .slide-text-wrap {
+        margin: 20px 10px;
+    }
+}
+
+/* col-xs */
+@media (max-width:576px) {
     .slide-text-wrap {
         margin: 20px 10px;
     }
