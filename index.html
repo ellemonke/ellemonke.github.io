@@ -20,6 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
 </head>
 
@@ -29,7 +30,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Ellen Hsu</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" title="Ellen Hsu">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,10 +42,10 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="https://github.com/ellemonke/" target="_new">GitHub <img src="img/icon_new_window.png" /></a>
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
@@ -72,13 +73,13 @@
           their goals by building well-designed tools and bridging the communication gap between technicians
           and consumers.</p>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/ellenyhsu/" title="LinkedIn" target="_new">
+          <a href="https://www.linkedin.com/in/ellenyhsu/" title="LinkedIn" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/ellemonke/" title="GitHub" target="_new">
+          <a href="https://github.com/ellemonke?tab=repositories" title="GitHub" target="_blank">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://public.tableau.com/profile/ellen.hsu#!/" title="Tableau Public" target="_new">
+          <a href="https://public.tableau.com/profile/ellen.hsu#!/" title="Tableau Public" target="_blank">
             <i class="fab fa-tableau"><img src="img/logo_tableau.png"></i>
           </a>
         </div>
@@ -124,6 +125,119 @@
 
     <hr class="m-0">
 
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="w-100">
+        <h2 class="mb-4">Project Highlights</h2>
+
+        <!--Slideshow-->
+        <section id="gallery">
+
+          <div class="row">
+            <div id="highlights" class="carousel slide">  
+              <div class="carousel-inner">
+
+                <ul class="carousel-indicators">
+                  <li data-target="#highlights" data-slide-to="0" class="active"></li>
+                  <li data-target="#highlights" data-slide-to="1"></li>
+                  <li data-target="#highlights" data-slide-to="2"></li>
+                  <li data-target="#highlights" data-slide-to="3"></li>
+                </ul> 
+
+                <div class="carousel-item active">
+                  <div class="slide-wrap row">
+                    <div class="primary-image col-sm-11 col-md-7 col-lg-6">
+                      <img src="projects/screenshot_fullstack.png" alt="Full Stack">
+                    </div>
+                    <div class="col-sm-11 col-md-5 col-lg-6">
+                      <div class="slide-text-wrap">
+                        <div class="subheading mb-3">Full Stack: World Happiness</div>
+                        <p>JavaScript, D3, Python, Pandas, NumPy, SciPy, HTML, CSS, Bootstrap</p>
+                        <p>The report analyzed global happiness and the factors correlated to it. I built the correlation table
+                          using Python, SciPy, JavaScript and D3 and created a responsive website using Bootstrap, HTML and CSS.</p>
+                        <p class="mt-3"><a href="https://ellemonke.github.io/full-stack-project/" target="_blank">Website</a> | 
+                            <a href="https://github.com/ellemonke/full-stack-project" target="_blank">Github</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="slide-wrap row">
+                    <div class="primary-image col-sm-11 col-md-7 col-lg-6">
+                        <img src="projects/screenshot_data_analysis.png" alt="Data Analysis">
+                    </div>
+                    <div class="col-sm-11 col-md-5 col-lg-6">
+                      <div class="slide-text-wrap">
+                        <div class="subheading mb-3">Data Analysis: Ecological Footprint</div>
+                        <p>Python, Pandas, NumPy, SciPy, Matplotlib</p>
+                        <p>I uncovered the story of our analysis that developed countries create large ecological footprints. I
+                          also compared land usage to see which ones created higher proportions of biodeficit or bioreserve.</p>
+                        <p class="mt-3"><a href="https://ellemonke.github.io/eco-analysis/presentation.html" target="_blank">Website</a> |
+                          <a href="https://github.com/ellemonke/eco-analysis" target="_blank">Github</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="slide-wrap row">
+                    <div class="primary-image col-sm-11 col-md-7 col-lg-6">
+                        <img src="projects/screenshot_machine_learning.png" alt="Machine Learning">
+                    </div>
+                    <div class="col-sm-11 col-md-5 col-lg-6">
+                      <div class="slide-text-wrap">
+                        <div class="subheading mb-3">Machine Learning: Predicting HDI</div>
+                        <p>Python, Scikit-learn, TensorFlow, Pandas, Matplotlib, Flask</p>
+                        <p>For this project, we calculated which indicators contributed most to the Human Development Index (HDI). I created the
+                          machine learning model and built the app that predicts HDI. I also built the Flask website.</p>
+                        <p class="mt-3"><a href="https://predict-hdi.herokuapp.com/" target="_blank">Website</a> |
+                            <a href="https://github.com/ellemonke/machine-learning-project" target="_blank">Github</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="slide-wrap row">
+                    <div class="primary-image col-sm-11 col-md-7 col-lg-6">
+                        <img src="projects/screenshot_web_design.png" alt="Web Design">
+                    </div>
+                    <div class="col-sm-11 col-md-5 col-lg-6">
+                      <div class="slide-text-wrap">
+                        <div class="subheading mb-3">Web Design: Vintalier.com</div>
+                        <p>I designed my own e-commerce website from scratch including the layout, landing and product pages, add-ons to
+                          encourage more shopping, cart conversion funnel, and the content. The website was built on BigCommerce by 
+                          CartDesigners and I edited the PHP snippets.</p>
+                        <p class="mt-3"><a href="https://www.vintalier.com/" target="_blank">Website</a> |
+                        <a href="http://instagram.com/vintalier" target="_blank">Social Media</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>  
+
+              <!-- Controls -->
+              <!-- <div class="row">
+                <div class="col-sm-11 col-md-7 col-lg-6">
+                  <a class="carousel-control-prev" href="#highlights" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#highlights" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+              </div> -->
+
+            </div>  
+          </div>
+        </section>  <!-- End Slideshow -->
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
@@ -131,7 +245,7 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
           <div class="resume-content">
             <h3 class="mb-0">Owner, Entrepreneur</h3>
-            <div class="subheading mb-3"><a href="https://www.vintalier.com/" target="_new">Vintalier LLC</a></div>
+            <div class="subheading mb-3"><a href="https://www.vintalier.com/" target="_blank">Vintalier LLC</a></div>
             <p>Founded and grew a successful multi-channel retail store, initially as e-commerce then also as a brick-and-mortar 
               store in 2013. Continued to sell on four e-commerce platforms and designed financial tools to forecast the annual
               purchasing budget, product mix and monthly cash flow.</p>
@@ -224,7 +338,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">Certificate - Data Analytics</h3>
+            <h3 class="mb-0">Certificate - Data Analytics, A+</h3>
             <div class="subheading mb-3">University of Oregon Boot Camp</div>
           </div>
           <div class="resume-date text-md-right">
@@ -271,11 +385,11 @@
       <div class="w-100">
         <h2 class="mb-4">Interests</h2>
         <p>Aside from being passionate about analytics, I enjoy being creative and dabbling in 
-          <a href="https://www.instagram.com/kattcandu/" target="_new">portrait drawing</a>.
+          <a href="https://www.instagram.com/kattcandu/" target="_blank">portrait drawing</a>.
           I try to spend my free time with loved ones as much as possible including my sprightly little cat, Marcel.
           In the evenings, I like to put on some downtempo hip hop or pop music and read modern economics books.
           Right now I'm on a Joseph Stiglitz binge and have a particular obsession with the 
-          <a href=https://sustainabledevelopment.un.org/#" target="_new">U.N.'s Sustainable Development Goals.</a></p>
+          <a href=https://sustainabledevelopment.un.org/#" target="_blank">U.N.'s Sustainable Development Goals.</a></p>
         <p>I'd like to be a better social activist with a lens of optimism - and a better cook, especially Indian 
           or Thai food.</p>
       </div>

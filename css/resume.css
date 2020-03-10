@@ -83,7 +83,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #3B478B;
+  /* color: #3B478B; */
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -175,5 +175,5 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #3B478B;
 }
